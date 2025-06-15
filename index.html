@@ -222,6 +222,20 @@
       <li><input type="checkbox"> Choose a cohesive color palette to keep packing minimal and cute</li>
       <li><input type="checkbox"> Keep one statement accessory that elevates every look</li>
     </ul>
-  </section>
+    </section>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      
+      checkboxes.forEach((checkbox, index) => {
+        const saved = localStorage.getItem(`zaza-checkbox-${index}`);
+        checkbox.checked = saved === 'true';
+  
+        checkbox.addEventListener('change', () => {
+          localStorage.setItem(`zaza-checkbox-${index}`, checkbox.checked);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
