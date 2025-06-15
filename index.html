@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaza's College Packing List</title>
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/adlam-display');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'ADLaM Display', sans-serif;
+      background: #fff8f5;
+      color: #2e2e2e;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffe4e9;
+      padding: 24px 10px;
+      text-align: center;
+      font-size: 2.2em;
+      color: #cc4e5c;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      background: #ffdee0;
+      padding: 12px 20px;
+      border-radius: 14px;
+      color: #5a2c2c;
+      font-size: 1.6em;
+      margin-top: 40px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    h2:hover {
+      transform: scale(1.02);
+      background: #ffd1d8;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 10px;
+    }
+
+    li {
+      margin: 12px 0;
+      padding: 10px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      transition: all 0.2s ease;
+    }
+
+    li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.3);
+      margin-right: 12px;
+      accent-color: #ff7a92;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        font-size: 1.7em;
+        padding: 16px 8px;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+      section {
+        padding: 16px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      body {
+        font-size: 0.95em;
+      }
+      h2 {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+  <link href="https://fonts.cdnfonts.com/css/adlam-display" rel="stylesheet">
+</head>
+<body>
+  <header>
+    🧳 Zaza's College Packing List
+  </header>
+  <section>
+    <h2>🛏️ Room & Sleep</h2>
+    <ul>
+      <li><input type="checkbox"> Bed sheets (size depends on dorm)</li>
+      <li><input type="checkbox"> Pillow + pillowcase</li>
+      <li><input type="checkbox"> Blanket or comforter</li>
+      <li><input type="checkbox"> Towels (2)</li>
+      <li><input type="checkbox"> Laundry bag or basket</li>
+      <li><input type="checkbox"> Hangers</li>
+      <li><input type="checkbox"> Slippers</li>
+    </ul>
+
+    <h2>🛏️ Clothes & Style</h2>
+    <ul>
+      <li><input type="checkbox"> Daily outfits (cute & comfy)</li>
+      <li><input type="checkbox"> Pajamas</li>
+      <li><input type="checkbox"> Workout clothes</li>
+      <li><input type="checkbox"> Dressy outfits (1-2)</li>
+      <li><input type="checkbox"> Jacket + warm hoodie</li>
+      <li><input type="checkbox"> Accessories: rings, earrings, scarf</li>
+      <li><input type="checkbox"> Cute shoulder bag + tote bag</li>
+      <li><input type="checkbox"> Slippers + everyday shoes + dress shoes</li>
+    </ul>
+
+    <h2>🛏️ Toiletries & Beauty</h2>
+    <ul>
+      <li><input type="checkbox"> Shampoo, conditioner, body wash</li>
+      <li><input type="checkbox"> Toothbrush + toothpaste + floss</li>
+      <li><input type="checkbox"> Hairbrush, clips, styling tools (straightener, dryer)</li>
+      <li><input type="checkbox"> Skincare: cleanser, moisturizer, sunscreen</li>
+      <li><input type="checkbox"> Makeup kit + organizer</li>
+      <li><input type="checkbox"> Deodorant + perfume/body mist</li>
+      <li><input type="checkbox"> Menstrual products + pain relief</li>
+      <li><input type="checkbox"> Nail kit, tweezers, cotton pads</li>
+    </ul>
+
+    <h2>🛏️ Study Supplies</h2>
+    <ul>
+      <li><input type="checkbox"> Backpack or stylish tote</li>
+      <li><input type="checkbox"> Notebooks + pastel pens + highlighters</li>
+      <li><input type="checkbox"> Laptop + charger + USB drive</li>
+      <li><input type="checkbox"> Planner or bullet journal</li>
+      <li><input type="checkbox"> Earbuds or headphones</li>
+    </ul>
+
+    <h2>🛏️ Electronics</h2>
+    <ul>
+      <li><input type="checkbox"> Phone + charger</li>
+      <li><input type="checkbox"> Power bank</li>
+      <li><input type="checkbox"> Extension cord/power strip</li>
+      <li><input type="checkbox"> USB flash drive</li>
+    </ul>
+
+    <h2>🛏️ Kitchen (if needed)</h2>
+    <ul>
+      <li><input type="checkbox"> Mug + cup + water bottle</li>
+      <li><input type="checkbox"> Plate, bowl, utensils</li>
+      <li><input type="checkbox"> Pan + small pot</li>
+      <li><input type="checkbox"> Sponge, dish soap, tea towel</li>
+      <li><input type="checkbox"> Snacks, ramen, coffee/tea</li>
+      <li><input type="checkbox"> Mini kettle (if allowed)</li>
+    </ul>
+
+    <h2>🛏️ Documents</h2>
+    <ul>
+      <li><input type="checkbox"> National ID (CIN)</li>
+      <li><input type="checkbox"> Bac diploma (photocopy)</li>
+      <li><input type="checkbox"> Registration papers</li>
+      <li><input type="checkbox"> Student card (when received)</li>
+      <li><input type="checkbox"> Passport-size photos</li>
+    </ul>
+
+    <h2>🛏️ Extras for Comfort</h2>
+    <ul>
+      <li><input type="checkbox"> Fairy lights or mini lamp</li>
+      <li><input type="checkbox"> Scented candle or room spray (if allowed)</li>
+      <li><input type="checkbox"> Plushie or comfort item</li>
+      <li><input type="checkbox"> Cozy blanket</li>
+      <li><input type="checkbox"> Personal playlist</li>
+      <li><input type="checkbox"> Hot water bottle for cramps</li>
+    </ul>
+
+    <h2>🛏️ Makeup Brands to Pack or Buy</h2>
+    <ul>
+      <li><input type="checkbox"> Maybelline (mascara, concealer)</li>
+      <li><input type="checkbox"> Essence (budget-friendly + cute)</li>
+      <li><input type="checkbox"> NYX (lip gloss, eyeliner)</li>
+      <li><input type="checkbox"> L'Oréal (foundation, brow products)</li>
+      <li><input type="checkbox"> e.l.f. (affordable brushes + highlighter)</li>
+      <li><input type="checkbox"> Revolution (eyeshadow palettes)</li>
+      <li><input type="checkbox"> Catrice (powder, blush)</li>
+    </ul>
+
+    <h2>🛏️ Snack & Food Ideas</h2>
+    <ul>
+      <li><input type="checkbox"> Instant ramen/pasta packs</li>
+      <li><input type="checkbox"> Granola bars</li>
+      <li><input type="checkbox"> Tea bags/instant coffee</li>
+      <li><input type="checkbox"> Chocolate bars/biscuits</li>
+      <li><input type="checkbox"> Dates, nuts, dried fruit</li>
+      <li><input type="checkbox"> Peanut butter or jam</li>
+      <li><input type="checkbox"> Juice boxes or flavored water</li>
+    </ul>
+
+    <h2>🛏️ Outfit Planner Tips</h2>
+    <ul>
+      <li><input type="checkbox"> Plan 5 go-to outfits for daily wear (rotate!)</li>
+      <li><input type="checkbox"> One "power outfit" for presentations or tough days</li>
+      <li><input type="checkbox"> Keep versatile pieces: jeans, white tee, black top, neutral cardigan</li>
+      <li><input type="checkbox"> Save outfit ideas in your notes or Pinterest board</li>
+      <li><input type="checkbox"> Choose a cohesive color palette to keep packing minimal and cute</li>
+      <li><input type="checkbox"> Keep one statement accessory that elevates every look</li>
+    </ul>
+  </section>
+</body>
+</html>
